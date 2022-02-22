@@ -1,2 +1,11 @@
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+sudo apt install -y build-essential pkg-config libssl-dev libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev libspeechd-dev libxkbcommon-dev
+
+
+
 TEST_BITMEX_ID=Zxk34DXEfGnQZ8M4bQLtiks4
 TEST_BITMEX_SECRET=yqoQnN4gFjKQzMUJfWAl4WjvcAig5B7ri07CObyQQOXWHVuX
+
+cargo run --bin demostrat bitmex -i
